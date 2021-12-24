@@ -50,7 +50,7 @@ namespace проверка_пароля
             {
                 if (A == true && B == true && C == true && D == true)
                 {
-                    FileStream file = new FileStream("Resource1.txt", FileMode.Create);
+                    FileStream file = new FileStream("Resource1.txt", FileMode.Open);
                     StreamWriter wr = new StreamWriter(file);
                     wr.Write(txtPassword.Text);
                     wr.Close();
